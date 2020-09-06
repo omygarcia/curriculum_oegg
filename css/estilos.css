@@ -41,7 +41,7 @@ nav
 	position:fixed;
 	z-index:100;
 	width:100%;
-	-webkit-box-sizing:border-box
+	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	-o-box-sizing:border-box;
@@ -129,7 +129,7 @@ header img
 {
 	width: 100%;
 	display: block;
-	padding:0.25em
+	padding:0.25em;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
@@ -351,6 +351,11 @@ fieldset
 	color: #fff;
 	font-size: 0.8em;
 	text-align: right;
+}
+
+.correo:after
+{
+	content: "ogarciag700@gmail.com";
 }
 
 
