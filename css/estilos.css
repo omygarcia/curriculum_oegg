@@ -1,7 +1,12 @@
-*
+*,*::after,*::before
 {
 	margin:0;
 	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 @font-face {
@@ -52,7 +57,7 @@ h1,h2
 {
 	font-family:'chalet';
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	font-size:2em;
+	font-size:2rem !important;
 	text-align: center;
 }
 
@@ -228,7 +233,9 @@ fieldset
 			font-size: 1.2em;
 			font-weight: bold;
 			outline: none;
-			padding: 0 0.25em;
+			width:2rem;
+			height: 2rem;
+			/*padding: 0 0.25em;*/
 		}
 
 		#btn_subir
@@ -239,7 +246,7 @@ fieldset
 			font-family: verdana;
 			font-weight: bold;
 			font-size: 1em;
-			padding: 0.5em;
+			padding: 0.5rem 1rem;
 			position: fixed;
 			right: 1em;
 			bottom: 1em;
@@ -351,11 +358,25 @@ fieldset
 	color: #fff;
 	font-size: 0.8em;
 	text-align: right;
+	margin:0;
 }
 
 .correo:after
 {
 	content: "ogarciag700@gmail.com";
+}
+
+.i-b{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.content{
+	font-size: 0;
+}
+
+.item{
+	font-size:1rem;
 }
 
 
@@ -376,6 +397,19 @@ fieldset
 
 /*smart phone*/
 @media screen and (max-width: 450px){
+
+	.sm10{width:10%;}
+    .sm20{width:20%;}
+    .sm25{width:25%;}
+    .sm30{width:30%;}
+    .sm33{width:33.3333%;}
+    .sm40{width:40%;}
+    .sm50{width:50%;}
+    .sm60{width:60%;}
+    .sm70{width:70%;}
+    .sm80{width:80%;}
+    .sm90{width:90%;}
+    .sm100{width:100%;}
 			
 	h1
 	{
@@ -384,6 +418,7 @@ fieldset
 			
 	nav
 	{
+		background: rgba(119,217,0,.7);
 		display: block;
 		position: relative;
 	}
@@ -404,14 +439,15 @@ fieldset
 
 	#btn_menu
 	{
-		display: block;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
-	h1,#btn_menu
+	h1
 	{
 		width: 60%;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: middle !important;
 	}
 
 	#btn_menu
