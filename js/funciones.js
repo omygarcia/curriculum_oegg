@@ -6,8 +6,19 @@ function mensajeUser(string,tipo)
 }
 
 	$(document).ready(function(){
-		$("#btn_menu").click(function(){
-			$("#navegacion").toggle();
+		var $menu = $("#btn_menu");
+		var $icon = $("#icon-menu");
+		$menu.click(function(){
+			var $nav = $("#navegacion");
+			$nav.slideToggle();
+
+			if($icon.hasClass("fa-bars"))
+			{
+				$icon.addClass("fa-times").removeClass("fa-bars");
+			}
+			else{
+				$icon.removeClass("fa-times").addClass("fa-bars");
+			}
 		});
 
 		//efecto para regresar al inicio de la pagina
